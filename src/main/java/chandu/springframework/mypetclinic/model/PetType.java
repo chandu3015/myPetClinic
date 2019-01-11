@@ -8,6 +8,7 @@ public class PetType {
         return Name;
     }
 
+
     public void setName(String name) {
         Name = name;
     }
