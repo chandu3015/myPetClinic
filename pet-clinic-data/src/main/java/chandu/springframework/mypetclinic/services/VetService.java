@@ -4,10 +4,6 @@ import chandu.springframework.mypetclinic.model.Vet;
 
 import java.util.Set;
 
-public interface VetService {
-    Vet findById(long id);
+public interface VetService extends  CrudServices<Vet,Long>{
 
-    Vet save(Vet owner);
-
-    Set<Vet> findAll();
 }
