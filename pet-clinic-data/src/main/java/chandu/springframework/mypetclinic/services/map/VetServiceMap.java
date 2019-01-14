@@ -2,10 +2,11 @@ package chandu.springframework.mypetclinic.services.map;
 
 import chandu.springframework.mypetclinic.model.Vet;
 import chandu.springframework.mypetclinic.services.CrudServices;
+import chandu.springframework.mypetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudServices<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
 
     @Override
     public Vet findById(Long id) {
