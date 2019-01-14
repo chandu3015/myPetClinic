@@ -3,9 +3,11 @@ package chandu.springframework.mypetclinic.services.map;
 import chandu.springframework.mypetclinic.model.Pet;
 import chandu.springframework.mypetclinic.services.CrudServices;
 import chandu.springframework.mypetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Pet findById(Long id) {

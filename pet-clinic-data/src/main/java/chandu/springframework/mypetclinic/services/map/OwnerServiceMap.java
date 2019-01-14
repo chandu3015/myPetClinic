@@ -3,9 +3,11 @@ package chandu.springframework.mypetclinic.services.map;
 import chandu.springframework.mypetclinic.model.Owner;
 import chandu.springframework.mypetclinic.services.CrudServices;
 import chandu.springframework.mypetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override
