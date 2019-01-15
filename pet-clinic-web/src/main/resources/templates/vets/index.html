@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="UTF-8">
     <title>List Of Vets</title>
 </head>
 <body>
 
-<table>
+<table  class="table table-striped" >
     <thead>
-
-    </thead>
-
-    <tbody>
 
     <tr>
         <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
     </tr>
+
+    </thead>
+
+    <tbody>
+
+
 
     <tr th:each="vet : ${vets}">
 
